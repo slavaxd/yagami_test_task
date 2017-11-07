@@ -1,0 +1,10 @@
+$base-color: black;
+$background-color: #555;
+
+@mixin border-radius($num){
+	-webkit-border-radius: $num;
+	-moz-border-radius: $num;
+	-ms-border-radius: $num;
+	-o-border-radius: $num;
+	border-radius: $num;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YagamIssues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/static/stylesheets/base.css">
+
+    <link rel="stylesheet" href="/static/stylesheets/bootstrap.css">
+
+    <link rel="stylesheet" href="/static/stylesheets/bootstrap-theme.css">
+
+    <style>
+        body {
+            background-color: #EDEEF0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Yagamissues</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main id="main">
+        <div class="jumbotron col-lg-offset-1 col-lg-10" style="border-bottom:1px dashed black">
+            <div class="container">
+                <h1>Welcome to the Yagamissues!</h1>
+                <h2>Here you can browse issues of a specific repository.</p>
+            <p>You can start right here.</p>
+            <form class="navbar-form" action="http://localhost:5000/get_issues" method="GET">
+                <div class="form-group">
+                    <input type="text" placeholder="Author name" name="n" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Repository name" name="r" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Open</button>
+            </form>
+          </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+<!--
+	  <script>
+        var n = "{{n}}"
+        var r = "{{r}}"
+    </script>
+
+    <script src="/static/js/sort.js"></script>
+    <script src="/static/js/elems.js"></script>
+-->
+</body>
+
+</html>
